@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Attention-Ocr-orange.svg) ![](https://img.shields.io/badge/pytorch-v1.0.0-brightgreen.svg)
 # Attention OCR in Pytorch
-This repository implements the the encoder and decoder model with attention model for OCR in pytorch, and its arithmetic is based on the papaer <[Attention-based Extraction of Structured Information from Street View Imagery](https://arxiv.org/pdf/1704.03549.pdf)>.
+This repository implements the the encoder and decoder model with attention model for OCR in pytorch, and its arithmetic is based on the paper <[Attention-based Extraction of Structured Information from Street View Imagery](https://arxiv.org/pdf/1704.03549.pdf)>.
 
 ⛳️ **Network Framework:**
 
@@ -15,7 +15,7 @@ This repository implements the the encoder and decoder model with attention mode
 
 ### Train
 
-#### Data
+#### Dataset
 We need a file (specified by parameter **TRAIN_DIR**, **TEST_DIR**) containing the path of images and the corresponding characters.
 1. Download the data or you can use the Small_Synthetic_Chinese_String_Dataset, every image fixed 10 characters. 344000 training image, and about 20000 testing image, please download it via [BaiDu](https://pan.baidu.com/s/1hIurFJ73XbzL-QG4V-oe0w#list/path=%2F)
 2. The train.txt and test.txt are created as the follow form:
@@ -51,7 +51,7 @@ After a while, you will see something like the following output in out.txt:
 2019-05-25 17:12:23,674: Epoch: 22	Batch: 5300	loss=0.016615	seq_acc=0.956002	char_acc=0.995070
 2019-05-25 17:12:32,679: Epoch: 22	training: loss=0.016603	epoch_seq_acc=0.955927	epoch_char_acc=0.995063
 ```
-✏️ Note that it takes quite a long time to reach convergence, since we are training the CNN and attention model simultaneously.
+✏️ Note that it takes quite a long time to reach convergence, since we are training the RCNN and attention model simultaneously.
 
 ### Test
 
